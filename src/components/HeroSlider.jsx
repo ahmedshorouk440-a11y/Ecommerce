@@ -34,7 +34,7 @@ function HeroSlider() {
           <p>windows Xp/10/7/8 Ps3 , Tv Box </p>
           <Link to="/" className="btn">Shop Now</Link>
         </div>
-        <img src="/src/React Ecommerce Reda Tech/img/banner_Hero1.jpg" alt="" />
+        <img src="" alt="" />
       </SwiperSlide>
 
        <SwiperSlide>
