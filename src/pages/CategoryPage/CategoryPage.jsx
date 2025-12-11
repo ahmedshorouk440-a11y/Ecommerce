@@ -36,7 +36,7 @@ function CategoryPage() {
         <div className="container">
           <div className="top_slide">
             <h2>{category} : {categoryProduct.limit}</h2>
-            <p>I am a Programmer</p>
+           
           </div>
 
           <div className="products">
