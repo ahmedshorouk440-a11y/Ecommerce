@@ -1,0 +1,43 @@
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img_shooping{
+    width: 50%;
+   
+   margin-left: 20%;
+   border-radius: 5px;
+
+}
+.cont{
+    display: flex;
+    margin-top: 20px;
+}
+h1,p{
+    margin-bottom: 20px;
+}
+
+.our-story{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.react{
+    display: flex;
+   
+     gap: 10px;
+  
+   font-size: 28px;
+   color: var(--main_color);
+   
+    
+
+}
+.top{
+      margin-top: 150px;
+}

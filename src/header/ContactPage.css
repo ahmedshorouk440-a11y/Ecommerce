@@ -1,0 +1,19 @@
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+label {
+ margin-top: 10px;
+}
+input{
+   width: 60%;
+   height: 30px;
+   border: 1px solid black ;
+   border-radius: 5px;
+}
+.btn{
+    margin-top: 20px;
+}

@@ -1,0 +1,144 @@
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.searchBox {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchBox input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.searchBox .icon {
+  position: absolute;
+  right: 10px; 
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #777;
+}
+
+.faq-page {
+  font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 60px 20px;
+  direction: rtl;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+}
+
+.search-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.search-input {
+ 
+  width: 100%  ;
+  padding: 18px 60px 18px 20px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: center;
+  direction: ltr;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 20px;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+}
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.question-icon {
+  width: 36px;
+  height: 36px;
+ background: #1a1a1a;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.faq-answer {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  padding-right: 52px; }
+
+ 
+@media (max-width: 768px) {
+  .faq-title { font-size: 32px; }
+  .faq-question h3 { font-size: 20px; }
+  .faq-answer { font-size: 17px; padding-right: 45px; }
+}
+
+
+
+
+
+
+
+
+
+
+

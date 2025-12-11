@@ -10,6 +10,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import { AnimatePresence } from "framer-motion";
 import CategoryPage from "./pages/CategoryPage/CategoryPage";
 import Favorites from "./pages/favorites/Favorites";
+import ContactPage from "./header/contactPage";
+import AboutPage from "./header/AboutPage";
+import Faqcomponent from "./Faqcomponent";
+import TermsComponent from "./TermsComponent";
+
 
 function App() {
   return (
@@ -35,6 +40,10 @@ function App() {
          <Route path="/search" element={<SearchResult/>} />
         <Route path="/products/:id" element={<ProductDetails />} />
          <Route path="/category/:category" element={<CategoryPage/>} />
+          <Route path="/about" element={<AboutPage/>}/>
+           <Route path="/FAQ" element={<Faqcomponent/>}/>
+            <Route path="/Terms-and-Condition" element={<TermsComponent/>}/>
+         <Route path="/contact" element={<ContactPage/>}/>
       </Routes>
 
       </AnimatePresence>

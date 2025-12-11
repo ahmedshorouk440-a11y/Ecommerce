@@ -8,12 +8,16 @@ import { FaUserPlus } from "react-icons/fa6";
 import './header.css'
 
 
+
 const NavLinks = [
   { title: "Home", link: "/" },
+
+     { title: "FAQ", link: "/FAQ" },
   { title: "About", link: "/about" },
-  { title: "Accessories", link: "/accessories" },
-  { title: "Blog", link: "/blog" },
-  { title: "Contact", link: "/contact" },
+    { title:  "Terms-and-Condition" , link: "/Terms-and-Condition" },
+ { title: "Contact", link: "/contact" },
+ 
+ 
 ];
 
 function BtmHeader() {
@@ -48,7 +52,7 @@ function BtmHeader() {
               onClick={() => setIsCategoryOpen(!isCategoryOpen)}
             >
               <IoMdMenu />
-              <p>Browse Category</p>
+              <div style={{color:"#fff"}}>Browse Category</div>
               <MdOutlineArrowDropDown />
             </div>
 
