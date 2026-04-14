@@ -60,22 +60,7 @@ offering reliable products at reasonable prices.</p>
   </div>
 
 
-    <div >
-
-          <h1 className='top' > Contact us with</h1>
-          <div className='react'>
-      < FaFacebook/>
-      <FaLinkedin/>
-      <FaYoutube/>
-      <FaWhatsapp/>
-      <FaGithub/>
-      <FaTelegramPlane/>
-      <FaGoogle/>
-      <SiNetlify/>
-      </div>
-
-      
-    </div>
+    
 
     </div>
    

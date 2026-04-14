@@ -12,10 +12,11 @@ import './header.css'
 const NavLinks = [
   { title: "Home", link: "/" },
 
-     { title: "FAQ", link: "/FAQ" },
+     { title: "Faq", link: "/FAQ" },
   { title: "About", link: "/about" },
     { title:  "Terms-and-Condition" , link: "/Terms-and-Condition" },
- { title: "Contact", link: "/contact" },
+ { title: "Contact", link: "/ContactPage" },
+  { title: "Login", link: "/login" },
  
  
 ];
@@ -101,7 +102,7 @@ function BtmHeader() {
         </nav>
 
         {/* SIGN IN / SIGN UP ICONS */}
-        <div className="sign_regs_icon">
+        <div className="sign_regs_icon" style={{padding:"15px"}}>
           <Link to="/"><PiSignInBold /></Link>
           <Link to="/"><FaUserPlus /></Link>
         </div>

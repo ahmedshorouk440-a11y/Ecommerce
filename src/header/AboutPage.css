@@ -27,17 +27,3 @@ h1,p{
     flex-direction: column;
    
 }
-.react{
-    display: flex;
-   
-     gap: 10px;
-  
-   font-size: 28px;
-   color: var(--main_color);
-   
-    
-
-}
-.top{
-      margin-top: 150px;
-}

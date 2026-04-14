@@ -13,10 +13,13 @@
     --white_color:#fff;
     --color_heading:#253237;
     --border_color:#d6d6d6d5;
+        
+    --orange-color: #f17732 ;
+    --btn-color : #565acf ;
 
 }
 body{
-    
+   
     background: #fff;
     font-family: "inter" , sans-serif;
     padding-top: 150px;

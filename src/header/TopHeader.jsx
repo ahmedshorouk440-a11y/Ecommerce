@@ -22,9 +22,9 @@ function TopHeader() {
 
         <SearchBox />
 
-        <div className="header_icons">
+        <div className="header_icons" style={{padding:"10px"}}>
           <div className="icon">
-            <Link to="/favorites">
+            <Link to="/favorites" >
               <FaRegHeart />
               <span className="count">{favoritesItems.length}</span>
             </Link>
