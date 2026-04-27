@@ -51,6 +51,18 @@ const ContactPage = () => {
               </div>
             </div>
 
+
+            {/* 🗺️ Map */}
+        <div className="map-container">
+          <iframe
+            title="map"
+            className="w-100"
+           
+            src="https://maps.google.com/maps?q=alexandria&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          ></iframe>
+        </div>
+
+
           </div>
 
         </div>
