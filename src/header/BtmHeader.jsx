@@ -103,8 +103,8 @@ function BtmHeader() {
 
         {/* SIGN IN / SIGN UP ICONS */}
         <div className="sign_regs_icon" style={{padding:"15px"}}>
-          <Link to="/"><PiSignInBold /></Link>
-          <Link to="/"><FaUserPlus /></Link>
+         
+          <Link to="/admin/dashboard" ><FaUserPlus /></Link>
         </div>
 
       </div>

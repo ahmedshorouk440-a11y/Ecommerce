@@ -1,0 +1,226 @@
+
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #0ea5e9;       /* sky blue */
+  --primary-dark: #0284c7;
+  --accent: #14b8a6;        /* teal */
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1e293b;
+  --muted: #94a3b8;
+  --border: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== LAYOUT ===== */
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page-content {
+  flex: 1;
+  padding: 26px;
+  overflow-y: auto;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #0f172a, #0b2a4a);
+  display: flex;
+  flex-direction: column;
+  padding: 22px 0;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-logo {
+  padding: 10px 24px 30px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-logo h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ===== NAV LINKS ===== */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.nav-link:hover {
+  background: rgba(14,165,233,0.15);
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(14,165,233,0.25);
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  height: 65px;
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.topbar-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+thead {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+thead th {
+  padding: 14px;
+  color: #1e293b;
+  font-size: 13px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+  background: #f1f9ff;
+}
+
+tbody td {
+  padding: 13px 14px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* ===== CARDS ===== */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 26px;
+  color: var(--primary);
+}
+
+.card-title {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* ===== TEXT ===== */
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ===== BUTTONS (optional improvement) ===== */
+button {
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}

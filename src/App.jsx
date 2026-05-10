@@ -16,9 +16,15 @@ import Faqcomponent from "./Faqcomponent";
 import TermsComponent from "./TermsComponent";
 import Login from "./header/login";
 import { useEffect } from "react";
+import Dashboard from "./Admin/Pages/Dashboard";
+import Admin from "./Admin/Component/AdminLayout";
+
+import Products from "./Admin/Pages/Product";
+import AddProduct from "./Admin/Pages/AddProduct";
+import Users from './Admin/Pages/Users';
+import Orders from './Admin/Pages/Orders';
 
 function App() {
-
   useEffect(() => {
     window.history.scrollRestoration = "manual";
   }, []);
@@ -34,10 +40,10 @@ function App() {
         position="bottom-right"
         toastOptions={{
           style: {
-            background: '#e9e9e9',
-            borderRadius: '5px',
-            padding: '14px'
-          }
+            background: "#e9e9e9",
+            borderRadius: "5px",
+            padding: "14px",
+          },
         }}
       />
 
@@ -56,6 +62,18 @@ function App() {
           <Route path="/Terms-and-Condition" element={<TermsComponent />} />
           <Route path="/ContactPage" element={<ContactPage />} />
           <Route path="/login" element={<Login />} />
+
+
+          <Route path="/admin" element={<Admin />}>
+  <Route path="dashboard" element={<Dashboard />} />
+  <Route path="products" element={<Products />} />
+  <Route path="add" element={<AddProduct />} />
+  <Route path="orders" element={<Orders />} />
+  <Route path="users" element={<Users />} />
+</Route>
+
+
+
         </Routes>
       </AnimatePresence>
     </>
